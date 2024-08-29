@@ -1,0 +1,138 @@
+/** @format */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #222222;
+}
+
+.welcomeHeading{
+  font-size: 3vw;
+  color: #ffffff;
+  text-align: center;
+}
+
+.mainButtonSection{
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.fullPanel{
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.sideBar{
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .3vw;
+  background: #1187fd;
+  height: 100vh;
+  padding: 2vw;
+  .sidebarButton{
+    border-bottom: 1px solid #ef692178;
+    padding: .3vw;
+    cursor: pointer;
+  }
+  .sidebarButton:hover{
+    background-color: #ef6921;
+  }
+}
+
+
+.selectionPanel{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 1vw;
+  padding-top: 4vw;
+
+}
+
+.selectionPanelHeading{
+  font-size: 1.3vw;
+  color: white;
+  margin-top: 4vw;
+  margin-bottom: -1vw;
+}
+
+.selectionPanelMainHeading{
+  font-size: 3vw;
+  color: white;
+  margin-top: 4vw;
+  margin-bottom: -1vw;
+}
+
+.chartArea{
+  display: flex;
+  align-items: center;
+  width: 70vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.button{
+  padding: 1vw 2vw;
+  font-size: 1.6vw;
+  font-weight: 600;
+  background: #1187fd;
+  color: #dfd5d5;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.filterBox {
+  border-radius: 30px;
+  display: flex;
+  padding: 3vw;
+  gap: 1vw;
+}
+
+.colorBox {
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 3vw;
+  gap: 1vw;
+  color: white;
+}
+
+.colorDesc{
+    display: flex;
+    gap: 2vw;
+}
+
+.colorIndicator{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.activeSelector{
+    color: #ffffff;
+    background-color: #1187fd;
+    padding: 1vw;
+    width: 12vw;
+}
+.inactiveSelector{
+    padding: 1vw;
+    width: 12vw;
+    cursor: pointer;
+    background-color: #666666;
+    color: white;
+    &:hover{
+      background-color: rgb(243, 154, 47);
+    }
+}
